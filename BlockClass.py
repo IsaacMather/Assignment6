@@ -34,7 +34,10 @@ class Block:
 
 
 
-    def block_checker(self):
+    def block_checker(self): #i think this is the foundation of replay,
+        # you need to make it so it reshashes the self.data and
+        # self.previous, and then checks it against the current self.hash to
+        # see if anything has changed
         current = self
         # print(self._data)
         while current._next is not None:
